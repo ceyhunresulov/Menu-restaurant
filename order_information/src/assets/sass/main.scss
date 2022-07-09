@@ -1,0 +1,119 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+// header 
+.header{
+    background-color: rgb(169, 54, 54) !important;   
+}
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(169, 54, 54,.5);
+    padding: 0 6em;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    .nav__top {
+      &--list {
+        display: flex;
+      }
+      &--item {
+        color: blue;
+        font-size: 30px;
+        list-style: none;
+        margin-right: 2em;
+        color: black;
+      }
+      &--link{
+        color: black;
+      }
+    }
+    .logo {
+      height: 80px;
+      width: 80px;
+      &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+
+// resataurant section
+#restaurant{
+    .info__box{
+        width: 100%;
+        height: calc(100vw/2);
+        background-image: url("@/assets/img/bcimg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__info{
+       padding: 1em;
+       box-sizing: border-box;
+       font-size: 1.3em;
+    }
+    &__title{
+        margin-top: 1em;
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+// orders
+#orders{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(138, 23, 23);
+    &__title{
+        letter-spacing: 2px;
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    .orders__list{
+        width: 50% !important;
+        
+    }
+    .orders__item{
+        list-style-type: decimal-leading-zero;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3em;
+    }
+    .orders__info{
+        margin-top: 3em;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        &--count{
+            font-size: 1.5em;
+        }
+        &--profit{
+            font-size: 1.5em;
+        }
+    }
+    hr{
+        margin-top:4px !important;
+    }
+
+}
