@@ -10,6 +10,21 @@ const routes = [
     path: "/orders",
     component: () => import("@/view/ordersPage"),
   },
+  {
+    name: "OrderDetail",
+    path: "/detail",
+    component: () => import("@/view/orderDetail"),
+  },
+  {
+    name: "AddOrders",
+    path: "/addorders",
+    component: () => import("@/view/addOrders"),
+  },
+  {
+    name: "CreateOrders",
+    path: "/createorders",
+    component: () => import("@/view/createOrders"),
+  },
 ];
 export default createRouter({
   routes,

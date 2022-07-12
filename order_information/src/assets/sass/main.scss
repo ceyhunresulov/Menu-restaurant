@@ -14,22 +14,15 @@ a{
     text-decoration: none;
 }
 // header 
-.header{
-    background-color: rgb(169, 54, 54) !important;   
-}
 header {
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(169, 54, 54,.5);
+    background-color: rgb(138, 23, 23);
     padding: 0 6em;
     box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
     .nav__top {
       &--list {
         display: flex;
@@ -80,6 +73,8 @@ header {
 
 // orders
 #orders{
+    padding-bottom: 2em;
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -116,4 +111,150 @@ header {
         margin-top:4px !important;
     }
 
+}
+// orders page 
+.orders__box{
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    table{
+        background-color: rgb(138, 23, 23);
+        min-width: 60%;
+        padding: 1em;
+        box-sizing: border-box;
+        thead{
+            th{
+                border: 1px solid white;
+                font-size: 1.7em;
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    border: 1px solid white;
+                    text-align: center;
+                    font-size: 1.5em;
+                    button{
+                        font-size: .6em;
+                        padding: .5em;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+        tfoot{
+            td{
+                padding: .5em;
+                box-sizing: border-box;
+                color: white;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+// add orders
+
+.add__orders{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--table{
+        margin: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    &--servant{
+        margin: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    #servant,#table{
+        width: 150px;
+        padding: .2em;
+        font-size: 1.5em;
+    }
+    label{
+        font-size: 1.7em;
+    }
+    .create__order{
+        font-size: 2em;
+        background-color: rgb(138, 23, 23);
+        color: white;
+        margin-top: 4em;
+        padding: .2em;
+        box-sizing: border-box;
+
+    }
+}
+
+// create orders
+
+.select__orders{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &--box{
+        box-shadow: 1px 1px 3px gray;
+        height: auto;
+        width: 50%;
+        
+    }
+    #eats{
+        padding: .5em;
+        width: 100%;
+    }
+    .eat__count{
+        margin: 2em 2em 0 0;
+        padding: .5em;
+        font-size: 1em;
+    }
+    .send__box{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        box-sizing: border-box;
+        .back{
+            background-color: rgb(138, 23, 23);
+            padding: .3em .5em;
+            font-size: 1em;
+            margin-right: .5em;
+            color: white;
+        }
+        &--link{
+            font-size: 1em;
+            padding: .3em .5em;
+            background-color: rgb(138, 23, 23);
+            color: white;
+            display: inline-block;
+        }
+    }
+    table{
+        background-color: lightgray;
+        width: 50%;
+        margin-top: 2em;
+        tbody{
+            tr{
+                td{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .button{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        .order__end{
+            background-color: rgb(138, 23, 23);
+            padding: .3em .5em;
+            box-sizing: border-box;
+            color: white;
+            margin-top: 1em;
+        }
+    }
 }

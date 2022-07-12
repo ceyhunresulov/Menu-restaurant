@@ -6,20 +6,23 @@
       <strong class="orders__info--profit">Ümumi Gelir: 40AZN</strong>
     </div>
     <ul class="orders__list">
-      <li class="orders__item"><span>yemek novu</span> <span>qiymet</span></li>
-      <hr />
-      <li class="orders__item"><span>yemek novu</span> <span>qiymet</span></li>
-      <hr />
-      <li class="orders__item"><span>yemek novu</span> <span>qiymet</span></li>
-      <hr />
-      <li class="orders__item"><span>yemek novu</span> <span>qiymet</span></li>
-      <hr />
-      <li class="orders__item"><span>yemek novu</span> <span>qiymet</span></li>
-      <hr />
-      <li class="orders__item"><span>yemek novu</span> <span>qiymet</span></li>
-      <hr />
-      <li class="orders__item"><span>yemek novu</span> <span>qiymet</span></li>
-      <hr />
+      <li
+        class="orders__item"
+        v-for="product in this.$store.state.products"
+        :key="product"
+      >
+        <span>{{ product.name }}</span> <span>{{ product.price }}</span>
+      </li>
     </ul>
   </section>
 </template>
+<script>
+export default {
+  created() {
+    this.appAxios.get("/products").then((products_response) => {
+      console.log("productsss", products_response);
+      // this.$store.state.products = products_response.data;
+    });
+  },
+};
+</script>

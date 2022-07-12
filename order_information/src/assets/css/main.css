@@ -17,10 +17,6 @@ a {
   text-decoration: none;
 }
 
-.header {
-  background-color: #a93636 !important;
-}
-
 header {
   width: 100%;
   height: 100px;
@@ -33,14 +29,10 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: rgba(169, 54, 54, 0.5);
+  background-color: #8a1717;
   padding: 0 6em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 header .nav__top--list {
@@ -96,6 +88,9 @@ header .logo__img {
 }
 
 #orders {
+  padding-bottom: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,4 +147,199 @@ header .logo__img {
 
 #orders hr {
   margin-top: 4px !important;
+}
+
+.orders__box {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.orders__box table {
+  background-color: #8a1717;
+  min-width: 60%;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.orders__box table thead th {
+  border: 1px solid white;
+  font-size: 1.7em;
+}
+
+.orders__box table tbody tr td {
+  border: 1px solid white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.orders__box table tbody tr td button {
+  font-size: .6em;
+  padding: .5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.orders__box table tfoot td {
+  padding: .5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-size: 1.5em;
+}
+
+.add__orders {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.add__orders--table {
+  margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add__orders--servant {
+  margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add__orders #servant, .add__orders #table {
+  width: 150px;
+  padding: .2em;
+  font-size: 1.5em;
+}
+
+.add__orders label {
+  font-size: 1.7em;
+}
+
+.add__orders .create__order {
+  font-size: 2em;
+  background-color: #8a1717;
+  color: white;
+  margin-top: 4em;
+  padding: .2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.select__orders {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.select__orders--box {
+  -webkit-box-shadow: 1px 1px 3px gray;
+          box-shadow: 1px 1px 3px gray;
+  height: auto;
+  width: 50%;
+}
+
+.select__orders #eats {
+  padding: .5em;
+  width: 100%;
+}
+
+.select__orders .eat__count {
+  margin: 2em 2em 0 0;
+  padding: .5em;
+  font-size: 1em;
+}
+
+.select__orders .send__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.select__orders .send__box .back {
+  background-color: #8a1717;
+  padding: .3em .5em;
+  font-size: 1em;
+  margin-right: .5em;
+  color: white;
+}
+
+.select__orders .send__box--link {
+  font-size: 1em;
+  padding: .3em .5em;
+  background-color: #8a1717;
+  color: white;
+  display: inline-block;
+}
+
+.select__orders table {
+  background-color: lightgray;
+  width: 50%;
+  margin-top: 2em;
+}
+
+.select__orders table tbody tr td {
+  text-align: center;
+}
+
+.select__orders .button {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.select__orders .button .order__end {
+  background-color: #8a1717;
+  padding: .3em .5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  margin-top: 1em;
 }

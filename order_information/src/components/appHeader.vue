@@ -1,5 +1,5 @@
 <template>
-  <header :class="{ header: changeStyle }">
+  <header :class="header5">
     <nav class="nav__top">
       <ul class="nav__top--list">
         <li class="nav__top--item">
@@ -13,7 +13,7 @@
           >
         </li>
         <li class="nav__top--item">
-          <router-link class="nav__top--link" :to="{ name: 'Home' }"
+          <router-link class="nav__top--link" :to="{ name: 'AddOrders' }"
             >sifariş əlavə et</router-link
           >
         </li>
@@ -25,12 +25,5 @@
   </header>
 </template>
 <script>
-import router from "@/router/index"
-export default {
- methods:{
-   router.beforeEach((to,from,next)=>{
-
-  })
- }
-};
+export default {};
 </script>

@@ -1,0 +1,67 @@
+{
+  "orders": [],
+  "products": [
+    {
+      "id": 1,
+      "name": "toyuq doner",
+      "price": 2.8
+    },
+    {
+      "id": 2,
+      "name": "et doner",
+      "price": 3.8
+    }
+  ],
+  "tables": [
+    {
+      "id": 1,
+      "name": "m1"
+    },
+    {
+      "id": 2,
+      "name": "m2"
+    },
+    {
+      "id": 3,
+      "name": "m3"
+    },
+    {
+      "id": 4,
+      "name": "m4"
+    },
+    {
+      "id": 5,
+      "name": "m5"
+    },
+    {
+      "id": 6,
+      "name": "m6"
+    }
+  ],
+  "servants": [
+    {
+      "id": 1,
+      "name": "Ferhad"
+    },
+    {
+      "id": 2,
+      "name": "Asif"
+    },
+    {
+      "id": 3,
+      "name": "Tunar"
+    },
+    {
+      "id": 4,
+      "name": "Hezret"
+    },
+    {
+      "id": 5,
+      "name": "Ceyhun"
+    },
+    {
+      "id": 6,
+      "name": "Cavid"
+    }
+  ]
+}
