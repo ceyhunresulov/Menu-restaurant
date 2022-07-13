@@ -63,7 +63,7 @@ export default {
     },
     getOrders() {
       if (this.$store.state.price != null) {
-        this.$appAxios.post("/orders/1", this.setInfo);
+        this.$appAxios.post("/orders/", this.setInfo);
         this.$router.push({ name: "Orders" });
         this.$store.state.table = null;
         this.$store.state.servant = null;

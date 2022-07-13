@@ -13,7 +13,7 @@
         <th>legv et</th>
       </thead>
       <tbody>
-        <tr v-for="order in this.$store.state.orders" :key="-order">
+        <tr v-for="order in this.$store.state.orders" :key="order">
           <td>{{ order.id }}</td>
           <td>{{ order.table }}</td>
           <td>{{ order.product[0].name }}</td>
