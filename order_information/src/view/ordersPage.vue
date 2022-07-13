@@ -5,20 +5,22 @@
       <thead>
         <th>id</th>
         <th>masa</th>
+        <th>sifaris</th>
+        <th>miqdar</th>
         <th>xidmetci</th>
         <th>mebleg</th>
-        <th>sonlanma tarixi</th>
-        <th>etrafli</th>
+        <th>sifaris tarixi</th>
         <th>legv et</th>
       </thead>
       <tbody>
-        <tr v-for="order in this.$store.state.orders" :key="order">
+        <tr v-for="order in this.$store.state.orders" :key="-order">
           <td>{{ order.id }}</td>
           <td>{{ order.table }}</td>
+          <td>{{ order.product[0].name }}</td>
+          <td>{{ order.product[0].count }}</td>
           <td>{{ order.servant }}</td>
           <td>{{ order.product[0].price }}Azn</td>
           <td>{{ order.date }}</td>
-          <td><router-link :to="{ name: 'OrderDetail' }">bax</router-link></td>
           <td><button @click="deleteOrder(order.id)">sil</button></td>
         </tr>
       </tbody>
@@ -41,6 +43,7 @@ export default {
       orders_response.data.forEach((item) => {
         sum += item.product[0].price;
       });
+      sum = Math.round(sum * 100) / 100;
       this.$store.state.allPrice = sum;
     });
   },
@@ -53,6 +56,7 @@ export default {
           new_response.data.forEach((item) => {
             sum += item.product[0].price;
           });
+          sum = Math.round(sum * 100) / 100;
           this.$store.state.allPrice = sum;
         });
       });

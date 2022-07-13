@@ -17,6 +17,11 @@
             >sifariş əlavə et</router-link
           >
         </li>
+        <li class="nav__top--item">
+          <router-link class="nav__top--link" :to="{ name: 'AdminPanel' }"
+            >Menu</router-link
+          >
+        </li>
       </ul>
     </nav>
     <div class="logo">

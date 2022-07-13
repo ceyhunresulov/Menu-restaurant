@@ -25,6 +25,11 @@ const routes = [
     path: "/createorders",
     component: () => import("@/view/createOrders"),
   },
+  {
+    name: "AdminPanel",
+    path: "/menu",
+    component: () => import("@/view/adminPanel"),
+  },
 ];
 export default createRouter({
   routes,

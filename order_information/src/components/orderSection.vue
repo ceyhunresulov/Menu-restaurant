@@ -1,9 +1,9 @@
 <template>
   <section id="orders">
-    <h1 id="orders__title">Sifarisler</h1>
+    <h1 id="orders__title">Menu</h1>
     <div class="orders__info">
-      <strong class="orders__info--count">Sifarisler: 15</strong>
-      <strong class="orders__info--profit">Ümumi Gelir: 40AZN</strong>
+      <strong class="orders__info--count">yemekler</strong>
+      <strong class="orders__info--profit">qiymetler</strong>
     </div>
     <ul class="orders__list">
       <li
@@ -11,7 +11,7 @@
         v-for="product in this.$store.state.products"
         :key="product"
       >
-        <span>{{ product.name }}</span> <span>{{ product.price }}</span>
+        <span>{{ product.name }}</span> <span>{{ product.price }}Azn</span>
       </li>
     </ul>
   </section>
@@ -19,9 +19,9 @@
 <script>
 export default {
   created() {
-    this.appAxios.get("/products").then((products_response) => {
+    this.$appAxios.get("/products").then((products_response) => {
       console.log("productsss", products_response);
-      // this.$store.state.products = products_response.data;
+      this.$store.state.products = products_response.data;
     });
   },
 };

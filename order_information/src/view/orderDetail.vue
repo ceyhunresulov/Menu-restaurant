@@ -8,7 +8,7 @@
         <th>xidmetci</th>
         <th>status</th>
         <th>mebleg</th>
-        <th>sonlanma tarixi</th>
+        <th>sifaris tarixi</th>
         <th>etrafli</th>
       </thead>
       <tbody>

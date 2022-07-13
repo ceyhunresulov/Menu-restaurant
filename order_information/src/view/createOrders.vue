@@ -25,31 +25,6 @@
         <button class="send__box--link" @click="getOrders">elave et</button>
       </div>
     </div>
-    <!-- <table>
-      <thead>
-            <th>say</th>
-        <th>mehsul</th>
-        <th>miqdar</th>
-        <th>mebleg</th>
-        <th>sifaris saati</th>
-        <th>legv et</th>
-      </thead>
-      <tbody>
-        <tr v-for="order in this.$store.state.orders" :key="order">
-          <td>{{ order.id }}</td>
-          <td>{{ order.name }}</td>
-          <td>{{ order.count }}</td>
-          <td>{{ order.price }}</td>
-          <td>11:00</td>
-          <td><button>geri al</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="button">
-      <button class="order__end" @click="changeStatus">
-        sifarisi sonlandir
-      </button>
-    </div> -->
   </div>
 </template>
 <script>
@@ -88,7 +63,7 @@ export default {
     },
     getOrders() {
       if (this.$store.state.price != null) {
-        this.$appAxios.post("/orders", this.setInfo);
+        this.$appAxios.post("/orders/1", this.setInfo);
         this.$router.push({ name: "Orders" });
         this.$store.state.table = null;
         this.$store.state.servant = null;
